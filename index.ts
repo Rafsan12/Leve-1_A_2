@@ -25,7 +25,7 @@ const books = [
   { title: "Book C", rating: 5.0 },
 ];
 const answer4 = filterByRating(books);
-console.log(answer4);
+// console.log(answer4);
 
 // Problem-3
 function concatenateArrays<T>(...arrays: T[][]): T[] {
@@ -37,4 +37,36 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
 }
 
 const answer5 = concatenateArrays(["a", "b"], ["c"]);
-console.log(answer5);
+// console.log(answer5);
+
+// Problem-4
+
+class Vehicle {
+  private _make: string;
+  private _year: number;
+
+  constructor(make: string, year: number) {
+    this._make = make;
+    this._year = year;
+  }
+
+  getInfo(): string {
+    return `Make: ${this._make}, Year: ${this._year}`;
+  }
+}
+
+class Car extends Vehicle {
+  private _model: string;
+
+  constructor(make: string, year: number, model: string) {
+    super(make, year);
+    this._model = model;
+  }
+  getModel(): string {
+    return `Model: ${this._model}`;
+  }
+}
+
+const myCar = new Car("Toyota", 2020, "Corolla");
+// console.log(myCar.getInfo());
+// console.log(myCar.getModel());
