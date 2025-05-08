@@ -114,6 +114,7 @@ enum Day {
 function getDayType(day: Day): string {
   switch (day) {
     case Day.Friday:
+      return "Weekend";
     case Day.Saturday:
       return "Weekend";
 
