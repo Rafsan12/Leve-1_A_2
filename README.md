@@ -6,7 +6,7 @@ In the union type we can hold several type. You can define union using pipe(|).c
 
 basic syntax of the union-
 
-```
+```ts
 function(id: string | number){
 
 // here you can use id as number or string
